@@ -1,0 +1,529 @@
+/*
+Theme Name: Catering.com
+Theme URI: http://wordpress.org/extend/themes/Catering.com
+Author: Ulia
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom "Ephemera" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured "sticky" posts), and special styles for six different post formats.
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: Catering.com
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:13px Arial, sans-serif; background:#F2F2F2; color:#7F7F7F; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:13px Arial, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header-wrap {
+    background: #000;
+}
+#header {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 966px;
+    position: relative;
+}
+#header h1 {
+    float: left;
+    padding: 20px 12px 22px;
+    font-weight: normal;
+}
+#header h1 a img {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+}
+#header-bot {
+    overflow: hidden;
+    background: url("images/home/header-bg.png") repeat-x;
+}
+#header-bot h2 {
+    padding: 42px 0 25px;
+    font: 36px "Georgia";
+    text-align: center;
+    font-weight: normal;
+    clear: both;
+    color: #fff;
+    text-shadow: 0 4px 2px rgba(160, 0, 0, 1);
+}
+#header-bot h2 span {
+    color: #2F2F2F;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header #nav {
+    float: right;
+    padding: 38px 12px 20px;
+}
+#header #nav li {
+    float: left;
+    padding: 0 0 0 34px;
+}
+#header #nav li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+#header #nav .current_page_item a {
+    color: #C32D01;
+}
+#header #nav li a:hover {
+    color: #C32D01;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HOME-----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content {
+    overflow: hidden;
+    width: 966px;
+    margin: 0 auto;
+}
+.content .slider-wrapper {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.content .slider-wrapper .nivoslider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.content .slider-wrapper .nivoslider img {
+    display: block;
+    width: 100%;
+    max-width: none;
+}
+.content .slider-wrapper .nivo-controlNav {
+    height: 40px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.content .blueberry .pager li {
+
+}
+.content .slider-wrapper .nivo-controlNav a {
+    display: inline-block;
+    background: url("images/home/control-btn.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    padding: 18px 8px;
+}
+.content .slider-wrapper .nivo-controlNav .active {
+    background: url("images/home/control-btn-active.png") no-repeat;
+}
+.content .offers {
+    overflow: hidden;
+    padding: 0 0 36px;
+}
+.content .offers li {
+    float: left;
+    padding: 0 8px 0 0;
+}
+.content .services {
+    float: left;
+    width: 270px;
+    padding: 0 30px 40px 0;
+}
+.content .services h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    padding: 0 0 26px;
+    font-weight: normal;
+}
+.content .services ul {
+    overflow: hidden;
+}
+.content .services ul li {
+    background: url("images/home/list-style.png") no-repeat left center;
+    padding: 0 18px 0;
+    margin: 0 0 18px;
+}
+.content .services a {
+    margin: 14px 0;
+    display: block;
+    background: url("images/home/btn-bg.png") repeat-x;
+    text-decoration: none;
+    color: #fff;
+    width: 63px;
+    padding: 14px 20px;
+}
+.content .about {
+    overflow: hidden;
+    padding: 0 0 0 30px;
+}
+.content .about h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    padding: 0 0 26px;
+    font-weight: normal;
+}
+.content .about p {
+    line-height: 24px;
+    padding: 0 0 20px;
+}
+.content .about p a {
+    color:#7F7F7F;
+}
+.content .about .marked ,
+.content .about .marked a {
+    color: #759D01;
+    font-weight: bold;
+}
+.content .about .btn {
+    margin: 23px 0;
+    display: block;
+    background: url("images/home/btn-bg-2.png") repeat-x;
+    text-decoration: none;
+    color: #fff;
+    width: 63px;
+    padding: 14px 20px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer-wrap {
+    background: #000;
+    clear: both;
+}
+.footer {
+    margin: 0 auto;
+    width: 966px;
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+.footer p {
+    padding: 0 0 10px;
+}
+.footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer p a:hover {
+    text-decoration: underline;
+}
+.footer p span {
+    color: #C32D01;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------MENU-----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.main-wrap {
+    margin: auto;
+    width: 966px;
+}
+.content-menu {
+    overflow: hidden;
+    padding: 38px 0 0 0;
+}
+.content-menu .special {
+    padding: 0 40px 0 0;
+}
+.content-menu .special h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    padding: 0 0 26px;
+    font-weight: normal;
+}
+.content-menu .special a img {
+    float: left;
+    padding: 0 30px 0 0;
+}
+.content-menu .special h4 {
+    padding: 0 0 16px;
+}
+.content-menu .special h4 a {
+    display: block;
+    font-weight: bold;
+    color: #7F7F7F;
+    text-decoration: none;
+}
+.content-menu .special p {
+    line-height: 24px;
+}
+.content-menu .special .btn-1 {
+    margin: 23px 0;
+    display: block;
+    background: url("images/menu/btn-bg.png") repeat-x;
+    text-decoration: none;
+    color: #fff;
+    width: 63px;
+    padding: 14px 20px;
+}
+.content-menu .menu {
+    overflow: hidden;
+}
+.content-menu .menu h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    padding: 0 0 26px;
+    font-weight: normal;
+}
+.content-menu .menu ul {
+    overflow: hidden;
+}
+.content-menu .menu ul li {
+    float: left;
+    padding: 0 30px 22px 0;
+}
+.content-menu .menu ul li a img {
+    display: block;
+    padding: 0 0 12px;
+}
+.content-menu .menu ul li h4 a {
+    display: block;
+    padding: 0 0 10px;
+    font-weight: bold;
+    color: #7F7F7F;
+    text-decoration: none;
+}
+.content-menu .menu ul li h4 a:hover {
+    text-decoration: underline;
+}
+.content-menu .menu ul li span {
+    line-height: 24px;
+}
+.content-menu .pagination {
+    overflow: hidden;
+    padding: 0 0 58px;
+    width: 50%;
+    margin: 0 auto;
+}
+.content-menu .pagination li {
+    float: left;
+    padding: 0 10px 0 0;
+}
+.content-menu .pagination li a {
+    text-decoration: none;
+    color: #C32D01;
+}
+.content-menu .pagination li .selected {
+    color: #7F7F7F;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR-MENU---------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.sidebar-menu {
+    float: right;
+    width: 444px;
+    padding: 38px 0 0 0;
+}
+.sidebar-menu h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    padding: 0 0 26px;
+    font-weight: normal;
+}
+.sidebar-menu dl {
+    margin: 0 0 20px;
+}
+.sidebar-menu dl dt {
+    float: left;
+    line-height: 30px;
+    background: url("images/menu/list-style.png") no-repeat left center;
+    padding: 0 0 0 16px;
+}
+.sidebar-menu dl dd {
+    text-align: right;
+    line-height: 30px;
+}
+.sidebar-menu a {
+    margin: 23px 0;
+    display: block;
+    background: url("images/menu/btn-bg-2.png") repeat-x;
+    text-decoration: none;
+    color: #fff;
+    width: 63px;
+    padding: 14px 20px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FAQ------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content {
+    overflow: hidden;
+    width: 966px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+.content h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    padding: 0 0 24px;
+    font-weight: normal;
+}
+.content .faq {
+    overflow: hidden;
+}
+.content .faq li {
+    padding: 0 0 38px;
+}
+.content .faq li h4 {
+    background: url("images/faq/list-style.png") no-repeat center left;
+    padding: 0 0 0 22px;
+}
+.content .faq li h4 a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #7F7F7F;
+    font-weight: bold;
+    line-height: 24px;
+}
+.content .faq li p {
+    font-size: 13px;
+    line-height: 25px;
+    padding: 8px 0 0 22px;
+    color: #7f7f7f;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTACT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {
+    width: 966px;
+    margin: 0 auto;
+}
+.content-wrap {
+    overflow: hidden;
+    padding: 45px 0 45px 10px;
+}
+.content-wrap h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    font-weight: normal;
+    padding: 0 0 20px;
+}
+.content-wrap form {
+    display: inline-block;
+}
+.content-wrap form div {
+    padding: 0 0 10px;
+}
+.content-wrap form div label {
+
+}
+.content-wrap form div #cntctfrm_contact_name,
+.content-wrap form div #cntctfrm_contact_email,
+.content-wrap form div #cntctfrm_contact_subject {
+    width: 254px;
+    height: 20px;
+    margin: 0 0 0 48px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 3px rgba(50, 50, 50, 0.75);
+}
+.content-wrap form div .cntctfrm_contact_message {
+    margin: 0 0 0 28px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 3px rgba(50, 50, 50, 0.75);
+}
+.content-wrap form .buttons {
+    float: right;
+}
+.content-wrap form .buttons input {
+    margin: 0 0 0 10px;
+    padding: 12px 34px;
+    color: #fff;
+    background: url("images/contact/btn-bg-2.png") repeat-x;
+    border: none;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR-CONTACT------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.sidebar-contact {
+    width: 310px;
+    float: left;
+    padding: 45px 10px 45px 0;
+}
+.sidebar-contact h3 {
+    font-size: 24px;
+    color: #3F3F3F;
+    font-weight: normal;
+    padding: 0 0 20px;
+}
+.sidebar-contact .mapsmarker {
+    padding: 0 0 20px;
+}
+.sidebar-contact address {
+    font-size: 13px;
+    color: #7f7f7f;
+    line-height: 25px;
+    padding: 0 0 20px;
+}
+.sidebar-contact .contacts {
+    overflow: hidden;
+}
+.sidebar-contact .contacts dt {
+    float: left;
+    font-weight: bold;
+    line-height: 30px;
+    width: 30%;
+}
+.sidebar-contact .contacts dd {
+    line-height: 30px;
+    overflow: hidden;
+    text-align: justify;
+}
+.sidebar-contact .contacts dd a {
+    color: #C52D01;
+}
