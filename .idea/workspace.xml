@@ -49,19 +49,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/catering.com/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="478" column="18" selection-start="14565" selection-end="14565" vertical-scroll-proportion="0.0">
+            <state line="478" column="18" selection-start="14565" selection-end="14565" vertical-scroll-proportion="0.62606233">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_form.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="contact_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/contact-form-plugin/contact_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="774" column="184" selection-start="71858" selection-end="71858" vertical-scroll-proportion="0.5588235">
+            <state line="774" column="184" selection-start="71858" selection-end="71858" vertical-scroll-proportion="112.88461">
               <folding>
                 <marker date="1364225737709" expanded="true" signature="81178:81228" placeholder="..." />
               </folding>
@@ -375,7 +375,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1612" height="912" extended-state="1" />
+    <frame x="-8" y="-8" width="1612" height="912" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -515,13 +515,6 @@
         <state line="25" column="16" selection-start="975" selection-end="975" vertical-scroll-proportion="0.601983" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/catering.com/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="478" column="18" selection-start="14565" selection-end="14565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/catering.com/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="48" selection-start="2331" selection-end="2331" vertical-scroll-proportion="-0.65384614">
@@ -555,10 +548,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/contact-form-plugin/contact_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="774" column="184" selection-start="71858" selection-end="71858" vertical-scroll-proportion="0.5588235">
+        <state line="774" column="184" selection-start="71858" selection-end="71858" vertical-scroll-proportion="112.88461">
           <folding>
             <marker date="1364225737709" expanded="true" signature="81178:81228" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/catering.com/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="478" column="18" selection-start="14565" selection-end="14565" vertical-scroll-proportion="0.62606233">
+          <folding />
         </state>
       </provider>
     </entry>
